@@ -1,1 +1,167 @@
+html code : 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framed Webpage</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 24px;
+        }
+        .content {
+            display: flex;
+            height: calc(100% - 50px);
+        }
+        .nav {
+            width: 20%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .main {
+            width: 60%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+        .remarks {
+            width: 20%;
+            background-color: #e6f3ff;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .nav ul li a {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+        }
+        .nav ul li a:hover {
+            color: #4a90e2;
+        }
+        h2 {
+            color: #4a90e2;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        My Framed Webpage
+    </div>
+    <div class="content">
+        <div class="nav">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <h2>Main Content</h2>
+            <p>Welcome to this framed webpage! This is the main content area where you can display your primary information. It takes up 60% of the width, providing ample space for your content.</p>
+            <p>You can add text, images, videos, or any other HTML content here. The layout is responsive and should work well on various screen sizes.</p>
+        </div>
+        <div class="remarks">
+            <h2>Remarks</h2>
+            <p>This section can be used for additional information, comments, or any supplementary content you'd like to include.</p>
+            <p>It's a great place for sidebars, quick notes, or highlights related to your main content.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+css code : 
+
+/* General styling for the website */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+/* Container to apply CSS Grid */
+.container {
+    display: grid;
+    grid-template-rows: 20% auto;  /* First row for header, second for main body */
+    grid-template-columns: 20% 60% 20%;  /* Columns: 20% left, 60% center, 20% right */
+    height: 100vh;  /* Full viewport height */
+}
+
+/* Grid items */
+.header {
+    grid-column: 1 / 4;  /* Header spans all 3 columns */
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.navigation {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigation ul li {
+    margin: 10px 0;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.navigation ul li a:hover {
+    color: #4CAF50;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.remarks {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-rows: auto auto auto auto;  /* Stack all sections vertically */
+        grid-template-columns: 1fr;  /* Single column */
+    }
+
+    .header, .navigation, .content, .remarks {
+        grid-column: 1;  /* Each section spans the full width */
+    }
+}
 
