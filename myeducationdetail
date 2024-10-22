@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Education Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .lists-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .list {
+            width: 48%;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .image-link {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            transition: transform 0.3s ease;
+        }
+
+        .image-link:hover {
+            transform: scale(1.05);
+        }
+
+        .image-map {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+        }
+
+        .media-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        audio, video {
+            width: 48%;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Education Portfolio</h1>
+
+    <h2>Education Details</h2>
+    <table>
+        <tr>
+            <th>Degree</th>
+            <th>Institution</th>
+            <th>Year</th>
+            <th>Grade</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>B.Tech in Computer Science</td>
+            <td>Jharkhand University Of Technology</td>
+            <td>2022 to 2026</td>
+            <td>7.2 GPA</td>
+            <td>Pursue</td>
+        </tr>
+        <tr>
+            <td>12th standard</td>
+            <td>Jharkhand Academic Council</td>
+            <td>2022</td>
+            <td>72%</td>
+            <td>Passed</td>
+        </tr>
+        <tr>
+            <td>10TH Standard</td>
+            <td>Central Board Of Secondary Education</td>
+            <td>2020</td>
+            <td>61%</td>
+            <td>Passed</td>
+        </tr>
+    </table>
+</table>
+</section>
+
+<section>
+    <h2>HTML Lists</h2>
+    <h3>Unordered List</h3>
+    <ul>
+        <li>item one</li>
+        <li>item two</li>
+        <li>item three</li>
+    </ul>
+
+    <h3>Ordered List</h3>
+    <ol>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ol>
+
+    <h3>Description List</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        
+        <dt>JavaScript</dt>
+        <dd>Programming language for the web</dd>
+      </dl>
+
+      <h3>Nested Lists</h3>
+      <ul>
+        <li>Item 1
+          <ul>
+            <li>Subitem 1a</li>
+            <li>Subitem 1b</li>
+          </ul>
+        </li>
+        <li>Item 2</li>
+      </ul>
+      
+      
+</section>
+
+<section>
+
+    <h2>Skills and Interests</h2>
+    <div class="lists-container">
+        <div class="list">
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+            </ul>
+        </div>
+        <div class="list">
+            <h3>Hobbies</h3>
+            <ol>
+                <li>Reading</li>
+                <li>Photography</li>
+                <li>Hiking</li>
+                <li>Cooking</li>
+            </ol>
+        </div>
+    </div>
+
+    <h2>Featured Project</h2>
+    <a href="https://example.com/project" class="image-link">
+        <img src="https://i.ibb.co/hcFQy43/Screenshot-2024-09-25-140101-1.jpg" alt="(insta clone)My Awesome Project Screenshot" width="200" height="95">
+    </a>
+
+    <h2>Campus Map</h2>
+    <img src="https://i.ibb.co/HThHb3h/250-3.jpg" alt="Campus Map" usemap="#campusmap" class="image-map">
+
+    <map name="campusmap">
+        <area shape="rect" coords="0,0,200,200" alt="Library" href="#library">
+        <area shape="rect" coords="210,0,400,200" alt="Cafeteria" href="#cafeteria">
+        <area shape="rect" coords="410,0,600,200" alt="Sports Complex" href="#sports">
+        <area shape="rect" coords="0,210,300,400" alt="Academic Block" href="#academic">
+        <area shape="rect" coords="310,210,600,400" alt="Hostel" href="#hostel">
+    </map>
+
+    <h2>Media Gallery</h2>
+    <div class="media-container">
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <video controls>
+            <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+</html>
